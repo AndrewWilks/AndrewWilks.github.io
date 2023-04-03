@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter } from "react-router-dom";
+import { MemoryRouter  } from "react-router";
 import './assets/css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <MemoryRouter >
       <App />
-  </React.StrictMode>,
+  </MemoryRouter >,
   document.getElementById('root')
 );
 

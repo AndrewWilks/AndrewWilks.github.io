@@ -10,7 +10,6 @@ import NotFound from './components/notFound.js';
 
 function App() {
   return (
-    <Router basemname={`/${process.env.PUBLIC_URL}`}>
       <div>
         {/* Add your navigation menu here */}
         <Routes>
@@ -22,7 +21,6 @@ function App() {
           <Route path="*"element={<NotFound/>} />
         </Routes>
       </div>
-    </Router>
   );
 }
 

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import UnderConstruction from './components/UnderConstruction';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        {/* Add your navigation menu here */}
+        <Routes>
+          <Route path="/" exact element={<UnderConstruction/>} />
+          <Route path="/about" element={<UnderConstruction/>} />
+          <Route path="/projects" element={<UnderConstruction/>} />
+          <Route path="/resume" element={<UnderConstruction/>} />
+          <Route path="/contact" element={<UnderConstruction/>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

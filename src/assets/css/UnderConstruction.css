@@ -1,0 +1,19 @@
+.under-construction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  .under-construction h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .under-construction p {
+    font-size: 1.2rem;
+  }
+  

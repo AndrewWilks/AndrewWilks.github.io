@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AndrewWilks/AndrewWilks.github.io.git/static/css/main.044c5cee.css",
-    "main.js": "/AndrewWilks/AndrewWilks.github.io.git/static/js/main.6f6fb402.js",
-    "static/js/787.1ed0c42c.chunk.js": "/AndrewWilks/AndrewWilks.github.io.git/static/js/787.1ed0c42c.chunk.js",
-    "index.html": "/AndrewWilks/AndrewWilks.github.io.git/index.html",
-    "main.044c5cee.css.map": "/AndrewWilks/AndrewWilks.github.io.git/static/css/main.044c5cee.css.map",
-    "main.6f6fb402.js.map": "/AndrewWilks/AndrewWilks.github.io.git/static/js/main.6f6fb402.js.map",
-    "787.1ed0c42c.chunk.js.map": "/AndrewWilks/AndrewWilks.github.io.git/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/AndrewWilks/AndrewWilks.github.io/static/css/main.044c5cee.css",
+    "main.js": "/AndrewWilks/AndrewWilks.github.io/static/js/main.fe661109.js",
+    "static/js/787.1ed0c42c.chunk.js": "/AndrewWilks/AndrewWilks.github.io/static/js/787.1ed0c42c.chunk.js",
+    "index.html": "/AndrewWilks/AndrewWilks.github.io/index.html",
+    "main.044c5cee.css.map": "/AndrewWilks/AndrewWilks.github.io/static/css/main.044c5cee.css.map",
+    "main.fe661109.js.map": "/AndrewWilks/AndrewWilks.github.io/static/js/main.fe661109.js.map",
+    "787.1ed0c42c.chunk.js.map": "/AndrewWilks/AndrewWilks.github.io/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.044c5cee.css",
-    "static/js/main.6f6fb402.js"
+    "static/js/main.fe661109.js"
   ]
 }

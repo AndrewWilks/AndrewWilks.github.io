@@ -1,6 +1,6 @@
- /* Style the hero section */
+/* Style the hero section */
 #hero {
-  background-color: #939393;
+  background-color: var(--secondary-color);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,24 +10,23 @@
 }
 
 #hero h1 {
-  font-size: 8em;
   margin-bottom: 0.25em;
   font-weight: 900;
-  min-height:1.5em
+  min-height: 1.5em;
+  color: var(--accent-color-2);
 }
 
-#hero h2 {
-  font-size: 3em;
+#hero h5 {
   font-weight: 400;
   margin: 0;
-  min-height:1.5em
+  min-height: 1.5em;
+  color: var(--text-color);
 }
 
 #hero p {
   padding: 0;
-  font-size: 2em;
   font-weight: 100;
   width: 50%;
-  min-height:10em;
+  min-height: 10em;
+  color: var(--text-color-light);
 }
-  

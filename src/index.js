@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MemoryRouter  } from "react-router";
+import { MemoryRouter } from "react-router";
 import './assets/css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <MemoryRouter >
-      <App />
+    <App />
   </MemoryRouter >,
   document.getElementById('root')
 );

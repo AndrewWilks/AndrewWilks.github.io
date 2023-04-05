@@ -1,41 +1,107 @@
-  /* Style the header and navigation */
-  header {
-    /* Screen Layer */
-    z-index: 100;
+/* Style the header and navigation */
+header {
+  /* Screen Layer */
+  z-index: 100;
 
-    /* Position */
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    
-    min-height: 130px;
-    min-width: 100%;
-  }
+  /* Position */
+  position: fixed;
+  top: 30px;
+  left: 20%;
 
-  header nav{
-    /* Position */
-    position: fixed;
-    top: 30px;
-    left: 20%;
+  /* Content Positioning */
+  padding: 1.25em;
 
-    /* Content Positioning */
-    padding: 1em;
+  /* Size */
+  max-width: 60%;
+  min-height: 2em;
 
-    /* Size */
-    width: 60%;
-    min-height: 2em;
+  /* Background */
+  background-color: rgba(255, 255, 255, 0.128);
+  background-repeat: repeat;
+  backdrop-filter: blur(20px);
 
-    /* Background */
-    background-color: rgba(255, 255, 255, 0.128);
-    background-repeat: repeat;
-    backdrop-filter: blur(20px);
+  /* Border */
+  border-radius: 20vh;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.167);
+  border-style: solid;
 
-    /* Border */
-    border-radius:20vh;
-    border-width: 2px;
-    border-color: rgba(255, 255, 255, 0.167);
-    border-style: solid;
+  /* Shadow */
+  box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.128);
 
-    /* Shadow */
-    box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.128);
+  /* Flexbox */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#nav-toggle {
+  /* Size */
+  padding: 1em;
+
+  /* Background */
+  background-color: var(--secondary-color);
+  color: white;
+
+  /* Border */
+  border: none;
+  border-radius: 20vh;
+
+  /* Shadow */
+  box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.128);
+
+  /* Position */
+  position: relative;
+  z-index: 1;
+}
+
+#nav-menu {
+  /* Hide by default */
+  display: none;
+  position: relative;
+  z-index: 1;
+  flex-direction: row;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+#nav-menu button {
+  margin-inline-end: 30px;
+
+  /* Background */
+  background-color: var(--accent-color-2);
+  color: var(--accent-contrasting-color-2);
+
+  /* Border */
+  border: 1px solid var(--accent-contrasting-color-2);
+  border-radius: 20vh;
+
+  /* Shadow */
+  box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.128);
+
+  /* Position */
+  position: relative;
+  z-index: 1;
+
+  /* Size */
+  padding: 1em;
+}
+
+#nav-menu button:hover {
+  transform: scale(1.2);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#nav-toggle:hover {
+  transform: scale(1.2);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+
+
+/* Show the nav menu when the button is clicked */
+#nav-toggle:focus+#nav-menu {
+  display: flex;
 }

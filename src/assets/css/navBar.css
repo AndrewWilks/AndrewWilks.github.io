@@ -1,0 +1,41 @@
+  /* Style the header and navigation */
+  header {
+    /* Screen Layer */
+    z-index: 100;
+
+    /* Position */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+    min-height: 130px;
+    min-width: 100%;
+  }
+
+  header nav{
+    /* Position */
+    position: fixed;
+    top: 30px;
+    left: 20%;
+
+    /* Content Positioning */
+    padding: 1em;
+
+    /* Size */
+    width: 60%;
+    min-height: 2em;
+
+    /* Background */
+    background-color: rgba(255, 255, 255, 0.128);
+    background-repeat: repeat;
+    backdrop-filter: blur(20px);
+
+    /* Border */
+    border-radius:20vh;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.167);
+    border-style: solid;
+
+    /* Shadow */
+    box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.128);
+}

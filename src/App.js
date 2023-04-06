@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Blog from './components/Blog.js';
+import { ScrollDown } from "./utils/utils"
 
 // import UnderConstruction from './components/UnderConstruction';
 import NotFound from './components/notFound.js';
@@ -15,6 +16,7 @@ function App() {
   return (
     <div>
       <NavBar />
+      <ScrollDown />
       <Routes>
         <Route path="" exact element={<Home />} />
         <Route path="about" element={<About />} />

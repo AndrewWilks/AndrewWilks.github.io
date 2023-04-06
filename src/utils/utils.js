@@ -1,13 +1,29 @@
-import React, { useState } from 'react';
-import { Form, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/css/navBar.css';
 import '../assets/css/utilities.css';
 
 export const ScrollDown = () => {
+  const [showClass, setShowClass] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    const bottom =
+      Math.ceil(window.innerHeight + window.scrollY) >=
+      document.documentElement.scrollHeight;
+    setShowClass(!bottom);
+  };
+
   return (
-    <div className='ScrollDown'>
-      <div className='scroll-down'><span>scroll down <i className="gg-arrow-down-r" style={{ "--ggs": 1.5 }} /></span></div>
-      <div className='scroll-down scroll-down--left'><span>scroll down <i className="gg-arrow-down-r" style={{ "--ggs": 1.5 }} /></span></div>
+    <div className={`ScrollDown ${showClass ? '' : 'hidden'}`}>
+      <div className='scroll-down'><span>scroll down <i className="gg-arrow-down-r" /></span></div>
+      <div className='scroll-down scroll-down--left'><span>scroll down <i className="gg-arrow-down-r" /></span></div>
     </div>
   );
 };
@@ -18,37 +34,35 @@ const NavBar = () => {
 
   // Function to toggle menu
   const toggleMenu = () => {
+    const navIcon = document.querySelector('.nav-icon');
+    const navLines = document.querySelectorAll('.nav-icon__line');
+    const navLinks = document.querySelector('.nav-links');
+
+    navLines.forEach(line => line.classList.toggle('nav-container--open'));
+    navIcon.classList.toggle('nav-container--open');
+    navLinks.classList.toggle('nav-container--open');
+
     setShowMenu(!showMenu);
   };
 
   return (
     <header>
-      <button id="nav-toggle" onClick={toggleMenu}>
-        Menu
-      </button>
-      <nav id="nav-menu" style={{ display: showMenu ? 'flex' : 'none' }}>
-        <Link to="">
-          <button>Home</button>
-        </Link>
-        <Link to="about">
-          <button>About</button>
-        </Link>
-        <Link to="projects">
-          <button>Projects</button>
-        </Link>
-        <Link to="resume">
-          <button>Resume</button>
-        </Link>
-        <Link to="contact">
-          <button>Contact</button>
-        </Link>
-        <Link to="blog">
-          <button>Blog</button>
-        </Link>
-        <Link to="404">
-          <button>404 Error</button>
-        </Link>
-      </nav>
+      <div className={`nav-container${showMenu ? ' nav-container--open' : ''}`}>
+        <div className="nav-icon" onClick={toggleMenu}>
+          <div className="nav-icon__line"></div>
+          <div className="nav-icon__line"></div>
+          <div className="nav-icon__line"></div>
+        </div>
+        <nav className="nav-links">
+          <Link to="">Home</Link>
+          <Link to="about">About</Link>
+          <Link to="projects">projects</Link>
+          <Link to="resume">resume</Link>
+          <Link to="contact">contact</Link>
+          <Link to="blog">blog</Link>
+          <Link to="404">404</Link>
+        </nav>
+      </div>
     </header>
   );
 };

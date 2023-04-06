@@ -1,50 +1,120 @@
+.ScrollDown {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
 .scroll-down {
-    position: absolute;
-    right: 1em;
-    bottom: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent-color-2);
+  position: fixed;
+  right: 1em;
+  bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color-2);
 }
 
 .scroll-down.scroll-down--left {
-    position: absolute;
-    left: 1.5em;
-    right: auto;
+  position: fixed;
+  left: 1.5em;
+  right: auto;
 }
 
 .scroll-down span {
-    display: inline-flex;
-    align-items: center;
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    animation-name: bounce-1;
-    animation-timing-function: linear;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    font-size: 1.6em;
+  display: inline-flex;
+  align-items: center;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  font-size: 1.6em;
 }
 
 .scroll-down i {
-    margin-top: 1em;
-    margin-right: 0.25em;
+  margin-top: 1em;
+  margin-right: 0.25em;
+  --ggs: 1.5;
 }
 
+/* Styles for screens up to 767px */
+@media (max-width: 767px) {
+  .scroll-down i {
+    margin-top: 0.75em;
+    margin-right: 0.25em;
+    --ggs: 1;
+  }
+}
+
+/* Styles for screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .scroll-down i {
+    margin-top: .8em;
+    margin-right: 0.3em;
+    --ggs: 1.2;
+  }
+}
+
+/* Styles for screens between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .scroll-down i {
+    margin-top: 1em;
+    margin-right: 0.25em;
+    --ggs: 1.5;
+  }
+}
+
+/* Styles for screens 1200px and above */
+@media (min-width: 1200px) {
+  .scroll-down i {
+    margin-top: 1em;
+    margin-right: 0.25em;
+    --ggs: 1.5;
+  }
+}
+
+
 @keyframes bounce-1 {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
 
-    50% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px)
-    }
+  50% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px)
+  }
 
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }

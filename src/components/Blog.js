@@ -4,6 +4,7 @@ import BlogCard from '../utils/BlogCard';
 import blogData from '../blogData.json';
 
 import '../assets/css/Home.css';
+import '../assets/css/Blog.css';
 import HeroSection from '../utils/heroSection';
 
 const Blog = () => {
@@ -18,23 +19,25 @@ const Blog = () => {
 
   return (
     <div className="blog">
+      <HeroSection hero={Hero} />
       <main>
-        <HeroSection hero={Hero} />
         <section className="blog">
-          {categories.map((category) => (
-            <div key={category.name} className="category">
-              <h2>{category.title}</h2>
-              <p>{category.subtitle}</p>
-              <p>{category.description}</p>
-              <div className="blog-cards">
-                {posts
-                  .filter((post) => post.category === category.name)
-                  .map((post) => (
-                    <BlogCard key={post.id} post={post} />
-                  ))}
+          <div className="container">
+            {categories.map((category) => (
+              <div key={category.name} className="category">
+                <h2>{category.title}</h2>
+                <h3>{category.subtitle}</h3>
+                <p>{category.description}</p>
+                <div className="blog-cards">
+                  {posts
+                    .filter((post) => post.category === category.name)
+                    .map((post) => (
+                      <BlogCard key={post.id} post={post} />
+                    ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </section>
       </main>
     </div>

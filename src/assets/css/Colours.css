@@ -138,4 +138,17 @@
     --text-color-light: var(--secondary-color-500);
     --link-color: var(--primary-color-500);
     --link-color-hover: var(--primary-color-700);
+
+    --button-color: hsla(28, 87%, 67%, 0.6);
+    --button-complementary-color: hsl(231, 100%, 69%);
+    --button-contrasting-color: hsl(0, 0%, 18%);
+    --button-color-100: hsla(35, 100%, 80%, 0.6);
+    --button-color-200: hsla(35, 100%, 70%, 0.6);
+    --button-color-300: hsla(35, 100%, 60%, 0.6);
+    --button-color-400: hsla(35, 100%, 50%, 0.6);
+    --button-color-500: hsla(35, 100%, 40%, 0.6);
+    --button-color-600: hsla(35, 100%, 30%, 0.6);
+    --button-color-700: hsla(35, 100%, 20%, 0.6);
+    --button-color-800: hsla(35, 100%, 10%, 0.6);
+    --button-color-900: hsla(35, 100%, 5%, 0.6)
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import blogData from '../blogData.json';
-import HeroSection from '../utils/heroSection';
+import { HeroSection_Blog as HeroSection } from '../utils/heroSection';
+import '../assets/css/Blog.css';
 
 const BlogPost = () => {
   const { id } = useParams();
@@ -22,8 +23,18 @@ const BlogPost = () => {
   return (
     <div className="blog-post">
       <HeroSection hero={Hero} />
-      <section className="post-content" dangerouslySetInnerHTML={{ __html: post.content }}></section>
-    </div>
+      <main>
+        <div className="container">
+          <div className="post-categories"><div className="post-category">{post.category}</div></div>
+          <div className="post-keywords">
+            {post.keywords.map((keyword) => (
+              <div className="post-keyword">{keyword}</div>
+            ))}
+          </div>
+          <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content }}></div>
+        </div>
+      </main>
+    </div >
   );
 };
 

@@ -10,8 +10,8 @@ const Contacts = () => {
   }
   return (
     <div className="contact">
+      <HeroSection hero={Hero} />
       <main>
-        <HeroSection hero={Hero} />
         <section id="main" style={{ "height": "200vh" }}>This is the Body</section>
       </main>
     </div>

@@ -11,4 +11,14 @@ const HeroSection = (props) => {
   );
 };
 
+export const HeroSection_Blog = (props) => {
+  return (
+    <section id="hero-Blog">
+      <h3>{props.hero.subtitle}</h3>
+      <h1>{props.hero.title}</h1>
+      <p>{props.hero.paragraph}</p>
+    </section>
+  );
+};
+
 export default HeroSection;

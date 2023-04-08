@@ -11,10 +11,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <main>
-        <HeroSection hero={Hero} />
-        <section id="main" style={{ "height": "200vh" }}>This is the Body</section>
-      </main>
+      <HeroSection hero={Hero} />
     </div>
   );
 };

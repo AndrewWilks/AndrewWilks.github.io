@@ -10,8 +10,8 @@ const UnderConstruction = () => {
   }
   return (
     <div className="404-NotFound">
+      <HeroSection hero={Hero} />
       <main>
-        <HeroSection hero={Hero} />
         <section id="main" style={{ "height": "200vh" }}>This is the Body</section>
       </main>
     </div>

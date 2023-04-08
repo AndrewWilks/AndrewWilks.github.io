@@ -1,11 +1,12 @@
 // eslint-disable-next-line
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
-import Blog from './components/Blog.js';
+import Blog from './components/Blog';
+import BlogPost from './components/BlogPost';
 import { ScrollDown } from "./utils/utils"
 
 // import UnderConstruction from './components/UnderConstruction';
@@ -24,6 +25,7 @@ function App() {
         <Route path="resume" element={<Resume />} />
         <Route path="contact" element={<Contact />} />
         <Route path="blog" element={<Blog />} />
+        <Route path="/post/:id" element={<BlogPost />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

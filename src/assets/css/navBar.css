@@ -47,6 +47,7 @@ header {
   height: 20px;
   justify-content: space-between;
   width: 30px;
+  cursor: pointer;
 }
 
 .nav-container .nav-icon__line {
@@ -107,6 +108,10 @@ nav {
 }
 
 @media (max-width: 845px) {
+  header {
+    padding: 1.1rem;
+  }
+
   .nav-container .nav-links {
     transition: clip-path 0s cubic-bezier(0.7, 0, 0, 1);
   }

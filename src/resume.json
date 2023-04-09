@@ -1,0 +1,283 @@
+{
+  "skills": {
+    "title": "Skills",
+    "list": [
+      {
+        "title": "Web Development",
+        "description": "Experience with web development frameworks and libraries like ReactJS, NodeJS, Bootstrap, Flask, and Express.js.",
+        "experience": "Very Good",
+        "experienceValue": 0.85
+      },
+      {
+        "title": "Programming Languages",
+        "description": "Knowledge and experience in various programming languages such as C, C++, C#, Java, JavaScript, HTML, CSS, and Python.",
+        "experience": "Good",
+        "experienceValue": 0.5
+      },
+      {
+        "title": "Systems Programming",
+        "description": "Experience with Linux, Git, Docker, AWS, and MySQL.",
+        "experience": "Very Good",
+        "experienceValue": 0.85
+      },
+      {
+        "title": "Mobile Application Development",
+        "description": "Completed a Mobile Applications minor, indicating knowledge and skills in mobile application development.",
+        "experience": "Very Good",
+        "experienceValue": 0.85
+      },
+      {
+        "title": "Hardware Development",
+        "description": "Experience in hardware development through the use of Arduino and Tinkercad.",
+        "experience": "Good",
+        "experienceValue": 0.5
+      },
+      {
+        "title": "Problem Solving",
+        "description": "Through academic work, demonstrated the ability to solve complex problems.",
+        "experience": "Excellent",
+        "experienceValue": 1
+      },
+      {
+        "title": "Time Management",
+        "description": "Completed multiple semesters with Dean's list recognition, indicating good time management skills.",
+        "experience": "Excellent",
+        "experienceValue": 1
+      },
+      {
+        "title": "Communication",
+        "description": "Developed strong written and verbal communication skills through experience and studies.",
+        "experience": "Very Good",
+        "experienceValue": 0.8
+      }
+    ]
+  },
+  "programmingLanguages": {
+    "title": "Programming Languages",
+    "list": [
+      {
+        "title": "C",
+        "experience": "Good",
+        "experienceValue": 0.6
+      },
+      {
+        "title": "C++",
+        "experience": "Good",
+        "experienceValue": 0.6
+      },
+      {
+        "title": "C#",
+        "experience": "Good",
+        "experienceValue": 0.6
+      },
+      {
+        "title": "Java",
+        "experience": "Fair",
+        "experienceValue": 0.4
+      },
+      {
+        "title": "JavaScript",
+        "experience": "Good",
+        "experienceValue": 0.6
+      },
+      {
+        "title": "HTML",
+        "experience": "Good",
+        "experienceValue": 0.6
+      },
+      {
+        "title": "CSS",
+        "experience": "Good",
+        "experienceValue": 0.6
+      },
+      {
+        "title": "Python",
+        "experience": "Fair",
+        "experienceValue": 0.4
+      }
+    ]
+  },
+  "software": {
+    "title": "Software",
+    "list": [
+      {
+        "title": "ReactJS",
+        "experience": "Fair",
+        "experienceValue": 0.4
+      },
+      {
+        "title": "NodeJS",
+        "experience": "Fair",
+        "experienceValue": 0.4
+      },
+      {
+        "title": "Bootstrap",
+        "experience": "Good",
+        "experienceValue": 0.6
+      },
+      {
+        "title": "Flask",
+        "experience": "Fair",
+        "experienceValue": 0.4
+      },
+      {
+        "title": "Express.js",
+        "experience": "Fair",
+        "experienceValue": 0.4
+      },
+      {
+        "title": "Linux",
+        "experience": "Good",
+        "experienceValue": 0.6
+      },
+      {
+        "title": "Git",
+        "experience": "Good",
+        "experienceValue": 0.6
+      },
+      {
+        "title": "Docker",
+        "experience": "Fair",
+        "experienceValue": 0.4
+      },
+      {
+        "title": "AWS",
+        "experience": "Fair",
+        "experienceValue": 0.4
+      },
+      {
+        "title": "MySQL",
+        "experience": "Good",
+        "experienceValue": 0.6
+      },
+      {
+        "title": "Arduino",
+        "experience": "Fair",
+        "experienceValue": 0.4
+      },
+      {
+        "title": "TinkerCad",
+        "experience": "Fair",
+        "experienceValue": 0.4
+      }
+    ]
+  },
+  "spokenLanguages": {
+    "title": "Spoken Languages",
+    "list": [
+      {
+        "title": "English",
+        "experience": "Fluent",
+        "experienceValue": 0.8
+      },
+      {
+        "title": "Spanish",
+        "experience": "Learning",
+        "experienceValue": 0.2
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "list": [
+      {
+        "title": "Bachelor Of Information Technology: Computer Science",
+        "location": "Queensland University of Technology - Brisbane, QLD",
+        "dateStart": "2020-03",
+        "dateEnd": "",
+        "current": true,
+        "gpa": 6.176,
+        "accomplishments": [
+          "Computer Science Major 84 out of 120 Credit Points achieved",
+          "Completed Core Units in Undergraduate Information Technology",
+          "Completed Mobile Applications Minor",
+          "Dean's List Semester One and 2020",
+          "Dean's List Semester Two and 2020",
+          "Dean's List Semester One and 2021",
+          "204 out of 288 Credit Points achieved"
+        ]
+      },
+      {
+        "title": "Vocational Graduate Diploma Of Management",
+        "location": "Academy of Interactive Entertainment (AIE) - Melbourne, VIC",
+        "dateStart": "2013-01",
+        "dateEnd": "2014-01",
+        "current": false,
+        "gpa": 0,
+        "accomplishments": []
+      },
+      {
+        "title": "Advanced Diploma: Professional Game Development - Art",
+        "location": "Academy of Interactive Entertainment (AIE) - Melbourne, VIC",
+        "dateStart": "2011-01",
+        "dateEnd": "2012-12",
+        "current": false,
+        "gpa": 0,
+        "accomplishments": []
+      }
+    ]
+  },
+  "accomplishments": {
+    "title": "Accomplishments",
+    "list": [
+      "Successfully developed and shipped to market a video game using C# programming language, Unity Game Engine and Steam as the distribution platform.",
+      "Achieved admission to the Dean's List for three semester's in a row at QUT while studying my current undergraduate degree.",
+      "Obtained a high level for Netball umpiring working through the levels from training C, B Bagging and then being invited to train for the High performance umpiring program to umpire for the Commonwealth games."
+    ]
+  },
+  "workHistory": {
+    "title": "Work History",
+    "list": [
+      {
+        "title": "Assistant Deli Manager",
+        "startDate": "2017-04",
+        "endDate": "",
+        "current": true,
+        "location": "Hawthorne Garage, Hawthorne, QLD",
+        "responsibilities": [
+          "Managed daily deli operations, including ordering, receiving, stocking, and merchandising.",
+          "Provided exceptional customer service and timely issue resolution.",
+          "Trained and supervised deli staff to adhere to safety and sanitation standards.",
+          "Helped increase sales and profitability through promotional planning.",
+          "Maintained accurate sales records and analyzed data for improvement opportunities.",
+          "Contributed to departmental budgets and financial planning.",
+          "Conducted performance evaluations and provided feedback to improve staff performance.",
+          "Ensured compliance with company policies and regulations for food safety and sanitation."
+        ]
+      },
+      {
+        "title": "Assistant Retail Manager",
+        "startDate": "2011-03",
+        "endDate": "2017-04",
+        "current": false,
+        "location": "Cellar And Pantry, Red Hill, VIC",
+        "responsibilities": [
+          "Assisted in managing daily store operations, including inventory management and merchandising.",
+          "Provided excellent customer service, addressing customer inquiries and resolving issues.",
+          "Supervised and trained store staff on company policies, procedures, and best practices.",
+          "Contributed to the development and implementation of promotional strategies and marketing plans.",
+          "Maintained a clean and safe store environment in compliance with health and safety regulations.",
+          "Collaborated with store management to achieve sales targets and improve store performance.",
+          "Managed cash handling, reconciling daily sales, and preparing bank deposits.",
+          "Assisted in creating staff schedules, monitoring attendance, and evaluating employee performance."
+        ]
+      },
+      {
+        "title": "Lead 3D Artist",
+        "startDate": "2013-02",
+        "endDate": "2019-09",
+        "current": false,
+        "location": "Atomizer Games, Melbourne, VIC",
+        "responsibilities": [
+          "Led a small team of artists in creating 3D assets for indie video games, adapting to various art styles and game genres.",
+          "Ensured project met technical requirements, quality standards, and was delivered on time and budget, while working closely with other team leads.",
+          "Collaborated with designers, animators, and programmers to create immersive game environments, characters, and assets.",
+          "Maintained consistency and quality of visual assets across the project, providing constructive feedback and creative direction.",
+          "Implemented optimization techniques for 3D assets to ensure smooth performance on various platforms.",
+          "Actively participated in project planning and brainstorming sessions to contribute ideas and insights.",
+          "Mentored and developed team members to advance their skills and careers, fostering a collaborative and supportive atmosphere."
+        ]
+      }
+    ]
+  }
+}

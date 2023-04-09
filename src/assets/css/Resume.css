@@ -1,0 +1,58 @@
+.container.resume {
+  display: flex;
+  flex-direction: row;
+}
+
+.resume-side {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-main {
+  width: 80%;
+}
+
+.progress-bar {
+  margin-top: 0.5rem;
+  position: relative;
+  height: 1rem;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  --progress-value: 50%;
+}
+
+.resume-content h5 {
+  margin-top: 0.8rem;
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--progress-value);
+  background-color: var(--accent-color-2);
+  border-radius: 10px;
+}
+
+.progress-bar[data-value="0"]::before {
+  display: none;
+}
+
+@media (max-width: 845px) {
+  .resume-side {
+    width: 100%;
+  }
+
+  .resume-main {
+    width: 100%;
+  }
+
+  .container.resume {
+    display: flex;
+    flex-direction: column;
+  }
+}

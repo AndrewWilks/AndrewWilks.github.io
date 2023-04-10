@@ -7,7 +7,7 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
 import BlogPost from './components/BlogPost';
-import { ScrollDown } from "./utils/utils"
+import { ScrollDown, ScrollToTop } from "./utils/utils"
 
 // import UnderConstruction from './components/UnderConstruction';
 import NotFound from './components/notFound.js';
@@ -16,6 +16,7 @@ import NavBar from './utils/utils';
 function App() {
   return (
     <div>
+      <ScrollToTop />
       <NavBar />
       <ScrollDown />
       <Routes>

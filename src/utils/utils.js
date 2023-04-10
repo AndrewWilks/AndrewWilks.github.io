@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import '../assets/css/navBar.css';
 import '../assets/css/utilities.css';
@@ -26,6 +27,16 @@ export const ScrollDown = () => {
       <div className='scroll-down scroll-down--left'><span>scroll down <i className="gg-arrow-down-r" /></span></div>
     </div>
   );
+};
+
+export const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 };
 
 const NavBar = () => {

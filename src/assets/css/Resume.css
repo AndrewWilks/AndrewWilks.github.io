@@ -1,16 +1,18 @@
 .container.resume {
   display: flex;
-  flex-direction: row;
-}
-
-.resume-side {
-  width: 20%;
-  display: flex;
   flex-direction: column;
 }
 
+.resume-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+}
+
 .resume-main {
-  width: 80%;
+  width: 100%;
+  padding-left: 2rem;
 }
 
 .progress-bar {
@@ -42,17 +44,77 @@
   display: none;
 }
 
-@media (max-width: 845px) {
+.resume-main .resume-content p {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.resume-main .resume-content h4 {
+  margin-left: 0px;
+  margin-top: 0.5em;
+}
+
+.resume-main .resume-content ul {
+  margin-left: 0px;
+  margin-top: 0.5em;
+}
+
+.resume-main .resume-content h3 {
+  margin-top: 0.25em;
+}
+
+.resume-main .resume-content:not(:first-child) h2 {
+  margin-top: 0.5em;
+
+}
+
+.resume-side .resume-content h3 {
+  margin-top: 25px;
+}
+
+.resume-side .resume-content:not(:first-child) h3 {
+  margin-top: 1em;
+}
+
+
+/* Styles for screens up to 767px */
+@media (max-width: 767px) {}
+
+/* Styles for screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* Styles for screens between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
   .resume-side {
-    width: 100%;
+    width: 30%;
   }
 
   .resume-main {
-    width: 100%;
+    width: 70%;
   }
 
   .container.resume {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+}
+
+/* Styles for screens 1200px and above */
+@media (min-width: 1200px) {
+  .container {
+    width: 70%;
+  }
+
+  .resume-side {
+    width: 30%;
+  }
+
+  .resume-main {
+    width: 70%;
+  }
+
+  .container.resume {
+    display: flex;
+    flex-direction: row;
   }
 }

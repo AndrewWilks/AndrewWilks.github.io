@@ -9,7 +9,9 @@ import {
   ResumeSpoken,
   ResumeEducation,
   ResumeHistory,
-  ResumeAccomplishments
+  ResumeAccomplishments,
+  ResumeName,
+  ResumeContact
 } from '../utils/ResumeParts'
 
 const Resume = () => {
@@ -22,12 +24,14 @@ const Resume = () => {
     <div className="resume">
       <HeroSection hero={Hero} />
       <main>
+        <section className="container"><ResumeName /></section>
         <section className="container resume">
           <div className="resume-side">
+            <ResumeContact />
+            <ResumeSpoken />
             <ResumeSkills />
             <ResumeProgramming />
             <ResumeSoftware />
-            <ResumeSpoken />
           </div>
           <div className="resume-main">
             <ResumeEducation />

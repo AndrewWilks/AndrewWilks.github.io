@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/Home.css';
-import HeroSection from '../utils/heroSection'
+import { HeroSection_Blog as HeroSection } from '../utils/heroSection'
 
 const Projects = () => {
   const Hero = {

@@ -136,8 +136,8 @@
 
     --text-color: var(--secondary-color-700);
     --text-color-light: var(--secondary-color-500);
-    --link-color: var(--primary-color-500);
-    --link-color-hover: var(--primary-color-700);
+    --link-color: var(--accent-color-2-500);
+    --link-color-hover: var(--accent-color-2-700);
 
     --button-color: hsla(28, 87%, 67%, 0.6);
     --button-complementary-color: hsl(231, 100%, 69%);

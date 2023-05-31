@@ -9,10 +9,7 @@ code {
     monospace;
 }
 
-/* Default font size */
-body {
-  font-size: 16px;
-}
+
 
 a {
   color: var(--link-color);
@@ -25,222 +22,84 @@ a:hover {
   font-weight: 800;
 }
 
+/* Default font size */
+:root {
+  font-size: 16px;
+}
+
+/* Set font size for headings */
+h1 {
+  font-size: 4.5rem;
+  /* equivalent to 90px */
+}
+
+h2 {
+  font-size: 3.375rem;
+  /* equivalent to 68px */
+}
+
+h3 {
+  font-size: 2.25rem;
+  /* equivalent to 45px */
+}
+
+/* Set font size for paragraphs */
+p {
+  font-size: 1.25rem;
+  /* equivalent to 25px */
+}
+
+/* Set font size for links */
+a {
+  font-size: 1.25rem;
+  /* equivalent to 25px */
+}
+
+/* Set font size for emphasized text */
+strong,
+em {
+  font-size: 1.25rem;
+  /* equivalent to 25px */
+}
+
+/* Set font size for list items */
+li {
+  font-size: 1.25rem;
+  /* equivalent to 25px */
+}
+
+/* Set font size for definition lists */
+dt,
+dd {
+  font-size: 1.25rem;
+  /* equivalent to 25px */
+}
+
+
 /* Styles for screens up to 767px */
 @media (max-width: 767px) {
-  body {
+  :root {
     font-size: 14px;
-  }
-
-  /* Set font size for headings */
-  h1 {
-    font-size: 3em;
-    /* equivalent to 42px */
-  }
-
-  h2 {
-    font-size: 2.25em;
-    /* equivalent to 32px */
-  }
-
-  h3 {
-    font-size: 1.5em;
-    /* equivalent to 24px */
-  }
-
-  /* Set font size for paragraphs */
-  p {
-    font-size: 1.125em;
-    /* equivalent to 18px */
-  }
-
-  /* Set font size for links */
-  a {
-    font-size: 1.125em;
-    /* equivalent to 18px */
-  }
-
-  /* Set font size for emphasized text */
-  strong,
-  em {
-    font-size: 1.125em;
-    /* equivalent to 18px */
-  }
-
-  /* Set font size for list items */
-  li {
-    font-size: 1.125em;
-    /* equivalent to 18px */
-  }
-
-  /* Set font size for definition lists */
-  dt,
-  dd {
-    font-size: 1.125em;
-    /* equivalent to 18px */
   }
 }
 
 /* Styles for screens between 768px and 991px */
 @media (min-width: 768px) and (max-width: 991px) {
-  body {
+  :root {
     font-size: 16px;
-  }
-
-  /* Set font size for headings */
-  h1 {
-    font-size: 3.5em;
-    /* equivalent to 56px */
-  }
-
-  h2 {
-    font-size: 2.625em;
-    /* equivalent to 42px */
-  }
-
-  h3 {
-    font-size: 1.75em;
-    /* equivalent to 28px */
-  }
-
-  /* Set font size for paragraphs */
-  p {
-    font-size: 1.25em;
-    /* equivalent to 20px */
-  }
-
-  /* Set font size for links */
-  a {
-    font-size: 1.25em;
-    /* equivalent to 20px */
-  }
-
-  /* Set font size for emphasized text */
-  strong,
-  em {
-    font-size: 1.25em;
-    /* equivalent to 20px */
-  }
-
-  /* Set font size for list items */
-  li {
-    font-size: 1.25em;
-    /* equivalent to 20px */
-  }
-
-  /* Set font size for definition lists */
-  dt,
-  dd {
-    font-size: 1.25em;
-    /* equivalent to 20px */
   }
 }
 
 /* Styles for screens between 992px and 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
-  body {
+  :root {
     font-size: 18px;
-  }
-
-  /* Set font size for headings */
-  h1 {
-    font-size: 4em;
-    /* equivalent to 72px */
-  }
-
-  h2 {
-    font-size: 3em;
-    /* equivalent to 54px */
-  }
-
-  h3 {
-    font-size: 2em;
-    /* equivalent to 36px */
-  }
-
-  /* Set font size for paragraphs */
-  p {
-    font-size: 1.125em;
-    /* equivalent to 20px */
-  }
-
-  /* Set font size for links */
-  a {
-    font-size: 1.125em;
-    /* equivalent to 20px */
-  }
-
-  /* Set font size for emphasized text */
-  strong,
-  em {
-    font-size: 1.125em;
-    /* equivalent to 20px */
-  }
-
-  /* Set font size for list items */
-  li {
-    font-size: 1.125em;
-    /* equivalent to 20px */
-  }
-
-  /* Set font size for definition lists */
-  dt,
-  dd {
-    font-size: 1.125em;
-    /* equivalent to 20px */
   }
 }
 
 /* Styles for screens 1200px and above */
 @media (min-width: 1200px) {
-  body {
-    font-size: 20px;
-  }
-
-  /* Set font size for headings */
-  h1 {
-    font-size: 4.5em;
-    /* equivalent to 90px */
-  }
-
-  h2 {
-    font-size: 3.375em;
-    /* equivalent to 68px */
-  }
-
-  h3 {
-    font-size: 2.25em;
-    /* equivalent to 45px */
-  }
-
-  /* Set font size for paragraphs */
-  p {
-    font-size: 1.25em;
-    /* equivalent to 25px */
-  }
-
-  /* Set font size for links */
-  a {
-    font-size: 1.25em;
-    /* equivalent to 25px */
-  }
-
-  /* Set font size for emphasized text */
-  strong,
-  em {
-    font-size: 1.25em;
-    /* equivalent to 25px */
-  }
-
-  /* Set font size for list items */
-  li {
-    font-size: 1.25em;
-    /* equivalent to 25px */
-  }
-
-  /* Set font size for definition lists */
-  dt,
-  dd {
-    font-size: 1.25em;
-    /* equivalent to 25px */
+  :root {
+    font-size: 16px;
   }
 }

@@ -39,6 +39,9 @@
     --accent-color-1-900: hsl(25, 100%, 5%);
 
     --accent-color-2: #F4A460;
+    --accent-color-2-80: hsla(28, 87%, 67%, 0.8);
+    --accent-color-2-50: hsla(28, 87%, 67%, 0.5);
+    --accent-color-2-20: hsla(28, 87%, 67%, 0.2);
     --accent-complementary-color-2: #6079FF;
     --accent-contrasting-color-2: #2d2d2d;
     --accent-color-2-100: hsl(35, 100%, 80%);

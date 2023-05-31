@@ -5,29 +5,28 @@ header {
 
   /* Position */
   position: fixed;
-  top: 50px;
+  top: 2rem;
   left: 20%;
 
   /* Content Positioning */
-  padding: 1em;
+  padding: 1rem;
 
   /* Background */
-  background-color: hsla(0, 0%, 0%, 0.8);
+  background-color: var(--accent-color-2-50);
   background-repeat: repeat;
   backdrop-filter: blur(10px);
-  mix-blend-mode: screen;
 
   /* Size */
   width: 60vw;
 
   /* Border */
-  border-radius: 25px;
-  border-width: 2px;
-  border-color: rgba(255, 255, 255, 0.255);
+  border-radius: 1rem;
+  border-width: 0.1rem;
+  border-color: var(--accent-color-2);
   border-style: solid;
 
   /* Shadow */
-  box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.128);
+  box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.256);
 
   /* Flexbox */
   display: flex;
@@ -38,7 +37,7 @@ header {
 .nav-container {
   position: relative;
   top: 8px;
-  width: calc(60vw);
+  width: 60vw;
 }
 
 .nav-container .nav-icon {
@@ -94,7 +93,7 @@ nav {
 }
 
 .nav-container .nav-container--open .nav-icon__line:nth-child(2) {
-  transform: translate(56vw, 0);
+  transform: translate(55vw, 0);
   transition: transform 0.7s cubic-bezier(0.7, 0, 0, 1);
 }
 

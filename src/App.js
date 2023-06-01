@@ -1,17 +1,17 @@
 // eslint-disable-next-line
 import { Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
-import Blog from './components/Blog';
-import BlogPost from './components/BlogPost';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import { ScrollDown, ScrollToTop } from "./utils/utils"
 
 // import UnderConstruction from './components/UnderConstruction';
-import NotFound from './components/notFound.js';
-import NavBar from './utils/utils';
+import NotFound from './pages/notFound.js';
+import NavBar from './components/navbar.js';
 
 function App() {
   return (

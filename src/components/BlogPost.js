@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import blogData from '../blogData.json';
+import blogData from '../data/blogData.json';
 import { HeroSection_Blog as HeroSection } from '../utils/heroSection';
 import '../assets/css/Blog.css';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import data from "../resume.json";
+import data from "../data/resume.json";
 
 const ProgressBar = (props) => {
   return (

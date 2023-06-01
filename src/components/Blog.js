@@ -1,7 +1,7 @@
 import React from 'react';
 
 import BlogCard from '../utils/BlogCard';
-import blogData from '../blogData.json';
+import blogData from '../data/blogData.json';
 
 import '../assets/css/Home.css';
 import '../assets/css/Blog.css';

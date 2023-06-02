@@ -7,6 +7,7 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import Experimental from './pages/Experimental.js';
 import { ScrollDown, ScrollToTop } from "./utils/utils"
 
 // import UnderConstruction from './components/UnderConstruction';
@@ -28,6 +29,7 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="/post/:id" element={<BlogPost />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="e" element={<Experimental />} />
       </Routes>
     </div>
   );

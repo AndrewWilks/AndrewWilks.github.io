@@ -1,3 +1,10 @@
+# TO USE:
+
+## Icons
+
+  1. [ ] **Phosphor Icons** - [Website](https://phosphoricons.com/) - [GitHub](https://github.com/phosphor-icons/homepage#phosphor-icons)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

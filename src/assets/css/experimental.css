@@ -1,0 +1,76 @@
+.sidebar {
+  background-color: red;
+  display: grid;
+  height: 100vh;
+  width: 5vw;
+  position: sticky;
+  top: 0;
+  left: 0;  
+  transition: width 0.05s cubic-bezier(0.445, 0.05, 0.55, 0.95); 
+  transition: box-shadow 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.sidebar:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 1);
+}
+
+.sidebar.active {
+  background-color: blue;
+  width: 20vw;
+  transition: width 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95); 
+}
+
+.sidebar i {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  background-color: green;
+  border: lightgreen;
+  border-radius: 5px;
+  border-style: solid;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+
+button .line {
+  border-radius: 5px;
+  background-color: white;
+  height: 3px;
+  width: 30px;
+  margin: 5px auto;
+
+  transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition-duration: 0.25s;
+
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.active button .line:nth-child(1) {
+  transform: rotate(45deg);
+  translate: 0px 8px;
+  transition-delay: 0.1s;
+}
+
+.sidebar.active button .line:nth-child(3) {
+  transform: rotate(-45deg);
+  translate: -1px -8px;
+  transition-delay: 0.1s;
+}
+
+.sidebar.active button .line:nth-child(2) {
+  opacity: 0;
+  scale: 0.1;
+  transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
